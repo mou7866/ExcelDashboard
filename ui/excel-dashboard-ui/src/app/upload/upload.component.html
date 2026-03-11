@@ -1,0 +1,20 @@
+<div class="page">
+  <h2>Upload Excel</h2>
+
+  <div class="card">
+    <div class="form-group">
+      <label for="file">Excel file (.xlsx)</label>
+      <input id="file" type="file" accept=".xlsx" (change)="onFileChange($event)" />
+    </div>
+
+    <div class="form-group">
+      <label for="currency">Currency</label>
+      <input id="currency" type="text" [(ngModel)]="currency" maxlength="3" />
+    </div>
+
+    <button [disabled]="isUploading()" (click)="upload()">Upload</button>
+
+    <p class="message" *ngIf="message()">{{ message() }}</p>
+    <p class="error" *ngIf="error()">{{ error() }}</p>
+  </div>
+</div>

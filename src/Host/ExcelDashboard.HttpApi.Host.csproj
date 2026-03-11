@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>$(NoWarn);NU1902</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.Account.Web" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.Web" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\ExcelDashboard.Application.csproj" />
+    <ProjectReference Include="..\Application\ExcelDashboard.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Infrastructure\ExcelDashboard.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

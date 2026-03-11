@@ -1,0 +1,25 @@
+using ClosedXML.Excel;
+
+var wb = new XLWorkbook();
+var sheet = wb.Worksheets.Add("Data");
+sheet.Cell(1, 1).Value = "Category";
+sheet.Cell(1, 2).Value = "Amount";
+sheet.Cell(1, 3).Value = "Date";
+sheet.Cell(2, 1).Value = "Food";
+sheet.Cell(2, 2).Value = 45.50;
+sheet.Cell(2, 3).Value = new DateTime(2025, 1, 15);
+sheet.Cell(3, 1).Value = "Transport";
+sheet.Cell(3, 2).Value = 120.00;
+sheet.Cell(3, 3).Value = new DateTime(2025, 1, 16);
+sheet.Cell(4, 1).Value = "Food";
+sheet.Cell(4, 2).Value = 28.75;
+sheet.Cell(4, 3).Value = new DateTime(2025, 1, 17);
+sheet.Cell(5, 1).Value = "Entertainment";
+sheet.Cell(5, 2).Value = 55.00;
+sheet.Cell(5, 3).Value = new DateTime(2025, 1, 18);
+var outPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "sample-data.xlsx");
+var fullPath = Path.GetFullPath(outPath);
+var dir = Path.GetDirectoryName(fullPath)!;
+Directory.CreateDirectory(dir);
+wb.SaveAs(fullPath);
+Console.WriteLine("Created: " + fullPath);

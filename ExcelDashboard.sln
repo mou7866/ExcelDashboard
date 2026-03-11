@@ -1,0 +1,46 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDashboard.Domain", "src\Domain\ExcelDashboard.Domain.csproj", "{B0F6C9C0-5C9E-4C9E-8F2E-5E5F5F5A1A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDashboard.Application.Contracts", "src\Application\ExcelDashboard.Application.Contracts.csproj", "{C1A7D1A1-6D2F-4C3E-9E1A-6F6B6B6B2B02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDashboard.Application", "src\Application\ExcelDashboard.Application.csproj", "{D2B8E2B2-7E3F-4D4F-A2B2-7A7C7C7C3C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDashboard.EntityFrameworkCore", "src\Infrastructure\ExcelDashboard.EntityFrameworkCore.csproj", "{E3C9F3C3-8F40-4E5F-B3C3-8B8D8D8D4D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDashboard.HttpApi.Host", "src\Host\ExcelDashboard.HttpApi.Host.csproj", "{F4DA04D4-9041-4F6F-C4D4-9C9E9E9E5E05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0F6C9C0-5C9E-4C9E-8F2E-5E5F5F5A1A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F6C9C0-5C9E-4C9E-8F2E-5E5F5F5A1A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F6C9C0-5C9E-4C9E-8F2E-5E5F5F5A1A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F6C9C0-5C9E-4C9E-8F2E-5E5F5F5A1A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A7D1A1-6D2F-4C3E-9E1A-6F6B6B6B2B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A7D1A1-6D2F-4C3E-9E1A-6F6B6B6B2B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A7D1A1-6D2F-4C3E-9E1A-6F6B6B6B2B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A7D1A1-6D2F-4C3E-9E1A-6F6B6B6B2B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B8E2B2-7E3F-4D4F-A2B2-7A7C7C7C3C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B8E2B2-7E3F-4D4F-A2B2-7A7C7C7C3C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B8E2B2-7E3F-4D4F-A2B2-7A7C7C7C3C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B8E2B2-7E3F-4D4F-A2B2-7A7C7C7C3C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C9F3C3-8F40-4E5F-B3C3-8B8D8D8D4D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C9F3C3-8F40-4E5F-B3C3-8B8D8D8D4D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C9F3C3-8F40-4E5F-B3C3-8B8D8D8D4D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C9F3C3-8F40-4E5F-B3C3-8B8D8D8D4D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DA04D4-9041-4F6F-C4D4-9C9E9E9E5E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DA04D4-9041-4F6F-C4D4-9C9E9E9E5E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DA04D4-9041-4F6F-C4D4-9C9E9E9E5E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DA04D4-9041-4F6F-C4D4-9C9E9E9E5E05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
